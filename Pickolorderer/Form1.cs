@@ -29,6 +29,8 @@ namespace Pickolorderer
 
         private void sortColorsBtn_Click(object sender, EventArgs e)
         {
+            orderedFileList.Items.Clear();
+            resultPanel.Controls.Clear();
             picHandler = new PicHandler(openFileDialog1.FileNames.ToList(), this);
         }
     }
